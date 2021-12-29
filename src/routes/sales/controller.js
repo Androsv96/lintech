@@ -17,9 +17,7 @@ const createSale = async (date, quantity, productId, productName) => {
   } else {
     const errorMessage = {
       code: 202,
-      error: `There is not enough stock to process this sale. Current stock is: ${
-        purchasesPerProduct - salesPerProduct
-      }`,
+      error: `There is not enough stock to process this sale. Current stock is: ${finalStock}`,
     };
     throw errorMessage;
   }

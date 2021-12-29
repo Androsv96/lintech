@@ -19,6 +19,10 @@ HOST=##
 
 where the `##` must be replaced for database's credentials.
 
+## Test app
+
+To test the app, you must run this command: `npm run test`.
+
 ## Run app
 
 To run the application on local, you must run this command: `npm run node`. This will create the database and tables if they do not exist.

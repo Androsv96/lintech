@@ -4,7 +4,6 @@ const port = process.env.PORT || 3000;
 
 const { initSequelize } = require('./src/services/sequelize');
 const api = require('./src/routes');
-
 app.use(express.json());
 app.use(api);
 
@@ -12,6 +11,10 @@ app.use(api);
   await initSequelize();
 })();
 
-app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(port, () => {
+    console.log(`App listening on port ${port}`);
+  });
+}
+
+module.exports = app;

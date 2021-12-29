@@ -8,7 +8,6 @@ router.post('/', async (req, res) => {
     if (!date || !quantity || !productId || !productName) {
       return res.status(401).json({ data: [], error: 'Data is missing' });
     }
-
     const createdPurchase = await createPurchase(
       date,
       quantity,
