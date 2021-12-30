@@ -1,9 +1,9 @@
 # Lintech
 
-This repo contains an assesment from Lintech. It is build on NodeJs and Express. I'm using Heroku's database services (Postgres) to store data.
+This repo contains an assesment from Lintech. It is built on NodeJs and Express. I'm using Heroku's database services (Postgres) to store data.
 You can run the app locally and test it with **Postman**
 
-## Eslint
+## Eslint
 I have used Eslint as linting tool. To run it, you must run this command: `npm run lint`
 
 ## ENV file
